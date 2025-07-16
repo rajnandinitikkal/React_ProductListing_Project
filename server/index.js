@@ -1,4 +1,6 @@
+import dotenv from 'dotenv';
 const express= require('express');
+
 const mongoose= require('mongoose');
 const cors = require('cors');
 const productModel = require('./models/products')
@@ -7,7 +9,8 @@ const app= express();
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect("mongodb+srv://rajnandinitikkal:ecommerce1password@cluster1.ixdrzsw.mongodb.net/products-data?retryWrites=true&w=majority",{
+mongoose.connect(process.env.MONGODB_URL,
+    {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
