@@ -1,0 +1,33 @@
+const express= require('express');
+const mongoose= require('mongoose');
+const cors = require('cors');
+const productModel = require('./models/products')
+
+const app= express();
+app.use(cors())
+app.use(express.json())
+
+mongoose.connect("mongodb+srv://rajnandinitikkal:ecommerce1password@cluster1.ixdrzsw.mongodb.net/products-data?retryWrites=true&w=majority",{
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
+.then(() => console.log("Mongodb connected"))
+.catch(err => console.log(err))
+
+app.get('/getProducts', async (req, res) =>{
+    try{
+        const products = await productModel.find({});
+        res.status(200).json(products);
+    }
+    catch(err){
+        console.error("Error fetching products:", err);
+        res.status(500).json({ error: "Failed to fetch products" });
+    }
+    // productModel.find()
+    // .then(products => res.json(products))
+    // .catch(err => res.json(err))
+})
+
+app.listen(3001, () => {
+    console.log("server is running on port 3001");
+})

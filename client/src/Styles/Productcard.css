@@ -1,0 +1,33 @@
+.MainCard{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+      flex-direction: row; 
+    /* align-items: center; */ 
+}
+
+.productCard{
+    text-align: center;
+    padding: 10px;
+    border: solid 1px gray;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0,0,0.1);
+    width:fit-content;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.product-info{
+    display: flex;
+    justify-content:space-around;
+}
+p{
+    font-size: 20px;   
+}
+.ImageURL{
+   padding: 20px;
+}
+img{
+    height: 250px;
+
+}

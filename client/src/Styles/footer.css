@@ -1,0 +1,8 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}.footer{
+    box-shadow: 3px 3px 5px rgba(0,0,0.1);
+    background-color: rgb(162, 161, 161);
+}
