@@ -49,12 +49,12 @@ function Navbar() {
               <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
             </svg>
           </button>
-
+        
           <NavLink to="/" className="nav-item">
-            Login
+            Home
           </NavLink>
           <NavLink to="/products" className="nav-item">
-            All Products
+            Shop
           </NavLink>
           <NavLink to="/about" className="nav-item">
             About
@@ -62,10 +62,21 @@ function Navbar() {
           <NavLink to="/feedback" className="nav-item">
             Feedback
           </NavLink>
-          <NavLink to="/logout" className="nav-item">
+          {/* <NavLink to="/logout" className="nav-item">
             Logout
+          </NavLink> */}
+          <NavLink to="/cart" className="nav-item" id="cart-button">
+         🛒
+          </NavLink>
+           <NavLink to="/login" className="nav-item" id="loginhover">
+            Login
+          <div className="dropdown-menu">
+          <NavLink to="/register" className="dropdown-item">Register</NavLink>
+          <NavLink to="/logout" className="dropdown-item">Logout</NavLink>
+        </div>
           </NavLink>
         </div>
+    
       </nav>
     </>
   );

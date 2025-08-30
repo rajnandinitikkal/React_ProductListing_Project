@@ -11,6 +11,10 @@ body{
     padding: 10px;
     position:relative;
 }
+
+#cart-button{
+    padding-top: 10px;
+}
 .logo{
     color: black;
     margin-left: 22px;
@@ -20,7 +24,7 @@ body{
 .search-bar{
     border: 2.5px solid rgb(151, 149, 149);
     width: 50%;
-    padding: 5px;
+    padding: 7px;
     border-radius: 10px;
     font-size: 15px;
     margin-right:20px;
@@ -70,6 +74,7 @@ body{
     border: none;
     border-radius: 6px;
 }
+
   @media screen and (max-width: 768px){
     .nav-links{
         position: fixed;
@@ -118,3 +123,39 @@ nav NavLink:first-child{
 /* .div1 NavLink{
    width: 100%;
 } */
+
+/* Position dropdown relative to Login */
+.nav-item.dropdown {
+  position: relative;
+}
+
+/* Dropdown hidden by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* appear below the Login link */
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  min-width: 120px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+/* Dropdown items */
+.dropdown-item {
+  display: block;
+  padding: 8px 12px;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+  background: #f0f0f0;
+}
+
+/* Show dropdown when hovering Login */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}

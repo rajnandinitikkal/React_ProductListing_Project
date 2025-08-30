@@ -5,9 +5,7 @@
     border:black ;
     border-radius: 2px solid gray;
     padding: 30px;
-    /* max-width: 500px; */
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content:space-between;
     gap: 40px;
     font-size: 25px;
@@ -18,10 +16,9 @@
     width: 660px;
 }
 .box-item-a{
-    /* flex: 2; */
-    /* max-width: 500px; */
    margin-right: 180px;
    margin-top: 30px;
+   text-align: center;
 }
 .namecontainer{
     display: flex;
@@ -99,6 +96,11 @@ p{
         width: 100%;
      }
      .upperflextbutton{
-        padding: 0%;
+        position: relative;
+     }
+     .box-item-a{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
      }
 }
