@@ -1,8 +1,12 @@
 import React from 'react';
+import homeImg from "../assets/LandingPagee.png";
 
 function LandingPage() {
   return (
-    <div>LandingPage</div>
+    <>LandingPage
+    <img src={homeImg} alt="landing-page"></img>
+    
+    </>
   )
 }
 
