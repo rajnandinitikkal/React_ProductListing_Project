@@ -23,6 +23,6 @@ module.exports = {
     hot: true,
     open: true,
     port: 3000,
-    allowedHosts: "all",
+    allowedHosts: " all",
   },
 };
