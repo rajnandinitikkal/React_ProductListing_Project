@@ -4,6 +4,7 @@
     /* justify-content: space-around; */
       flex-direction: row; 
     /* align-items: center; */ 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .productCard{

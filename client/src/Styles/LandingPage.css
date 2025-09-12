@@ -13,16 +13,42 @@
 .slider-track {
   display: flex;
   transition: transform 1s ease-in-out;
+  transform: translateX(0);
 }
 
 .slide {
   min-width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .slide img {
-  width: 100%;
-  height: 100%;
+  width: 100% ;
+  height: 100% ;
   object-fit: cover;
   border-radius: 16px;
+}
+.categorynameHeading{
+  text-align: center;
+  margin: 40px 40px;
+  font-size: 30px;
+}
+
+.shopByCategory{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;  
+}
+.categoryImage{
+  object-fit: cover;
+  border: 1px solid gray;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+}
+.categoryname{
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

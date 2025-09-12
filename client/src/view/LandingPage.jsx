@@ -1,4 +1,4 @@
-// import React from 'react';
+
 import WatchImg from "../assets/carousels/electric.png";
 import Cloths from "../assets/carousels/Cloths.png";
 import Electronics from "../assets/carousels/Electronics.png";
@@ -44,7 +44,40 @@ function LandingPage() {
     </div>
 
     <div>
-       <h2>Shop By Categories</h2>
+       <h2 className="categorynameHeading">Shop By Categories</h2>
+
+
+    <div className="shopByCategory">
+      <div>
+        <img src={Cloths} alt="Cloths" className="categoryImage"/>
+          <p className="categoryname">Cloths</p>
+      </div>
+      <div>
+        <img src={Electronics} alt="Electronics" className="categoryImage"/> 
+          <p className="categoryname">Electronics</p>
+      </div>
+      <div>
+        <img src={Ethinic} alt="Ethinic" className="categoryImage"/>
+          <p className="categoryname">Electronics</p>
+      </div>
+      <div>
+        <img src={FlowerPots} alt="FlowerPots" className="categoryImage"/>
+          <p className="categoryname">  Electronics</p>
+      </div>
+      <div>
+        <img src={Gadgets} alt="Gadgets" className="categoryImage"/>
+          <p className="categoryname">Electronics</p>
+      </div>
+      <div>
+        <img src={Jwellary} alt="Jwellary" className="categoryImage"/>
+          <p className="categoryname">Electronics</p>
+      </div>
+      <div>
+        <img src={WatchImg} alt="WatchImg" className="categoryImage"/>
+          <p className="categoryname">Electronics</p>
+      </div>
+
+      </div>
     </div>
 
     <div>
