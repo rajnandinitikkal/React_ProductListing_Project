@@ -30,8 +30,24 @@ function LandingPage() {
   }, [images.length]);
   return (
     <>
+    <div classNmae="navCategoryNameSection">
+      <ul>
+      <li className="sectionsInLandingPage">Women</li>
+      <li className="sectionsInLandingPage">Men</li>
+      <li className="sectionsInLandingPage">Jwellary</li>
+      <li className="sectionsInLandingPage">Home & Kitchen</li>
+      <li className="sectionsInLandingPage">Fashion</li>
+      <li className="sectionsInLandingPage">Beauty</li>
+      <li className="sectionsInLandingPage">Accessories</li>
+      <li className="sectionsInLandingPage">Mobile & Tablets</li>
+      <li className="sectionsInLandingPage">Bags & Footwear</li>
+      <li className="sectionsInLandingPage">Kids</li>
+      <li className="sectionsInLandingPage">Office wear</li>
+      </ul>
+    </div>
+
     <div className="slider-container">
-      <div className="slider-track" 
+    <div className="slider-track" 
       style={{ transform: `translateX(-${current * 100}%)` }}>
         {images.map((img, index) =>(
           <div className="slide" key={index}>
@@ -40,7 +56,7 @@ function LandingPage() {
            alt={`carousel - ${index}`} ></img>
            </div>
         ))}
-      </div>
+    </div>
     </div>
 
     <div>

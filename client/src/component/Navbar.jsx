@@ -23,7 +23,7 @@ function Navbar() {
         </span>
         <input
           type="search"
-          placeholder="search"
+          placeholder="Try saree,Kurti or search by Product Name"
           className="search-bar"
         ></input>
 
