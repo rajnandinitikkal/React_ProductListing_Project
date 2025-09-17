@@ -1,4 +1,4 @@
-
+import Footer from "../component/footer";
 import WatchImg from "../assets/carousels/electric.png";
 import Cloths from "../assets/carousels/Cloths.png";
 import Electronics from "../assets/carousels/Electronics.png";
@@ -99,6 +99,8 @@ function LandingPage() {
     <div>
 
     </div>
+
+    <Footer/>
 
     </>
   )

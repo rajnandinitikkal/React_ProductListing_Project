@@ -3,6 +3,7 @@ import "../Styles/Productcard.css";
 import React, { useState, useEffect } from 'react';
 import productsJsonData from '../data/products.json';
 import { useNavigate } from "react-router-dom";
+import Footer from "./footer";
 
 function Productcard() {
     const [products, setProducts] = useState([]);
@@ -46,7 +47,7 @@ function Productcard() {
           </div>
         ))}
       </div>
-      
+      <Footer/>
     </>
   );
 }

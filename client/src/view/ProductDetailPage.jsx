@@ -1,6 +1,7 @@
 import React from "react";
 import productsData from "../data/products.json";
 import { useParams } from "react-router-dom";
+import Footer from "../component/footer";
 
 function ProductDetailPage(props) {
   const { productId } = useParams();
@@ -11,6 +12,7 @@ function ProductDetailPage(props) {
   }
 
   return (
+    <>
     <div className="productDetailPage">
       <div className="productDetailPageImage">
         <img src={product.imgUrl} alt={product.name} />
@@ -26,6 +28,8 @@ function ProductDetailPage(props) {
         <button>Add To Bag</button>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 

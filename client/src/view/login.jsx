@@ -2,6 +2,7 @@ import React from "react";
 import manlogo from "../assets/online-registration-or-sign-up-login-for-account-on-smartphone-app-user-interface-with-secure-password-mobile-application-for-ui-web-banner-access-cartoon-people-illustration-vector.jpg";
 import "../Styles/login.css";
 import { Link } from "react-router-dom";
+// import Footer from "../component/footer";
 
 function login() {
   return (
@@ -51,6 +52,7 @@ function login() {
           </form>
         </div>
       </div>
+      
     </>
   )
 }

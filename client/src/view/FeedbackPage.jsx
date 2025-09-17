@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Footer from "../component/footer";
 
 function FeedbackPage() {
   return (
-    <div>FeedbackPage</div>
+    <div>
+      
+      <Footer/>
+      FeedbackPage</div>
   )
 }
 

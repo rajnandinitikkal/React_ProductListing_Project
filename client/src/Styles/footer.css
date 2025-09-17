@@ -3,7 +3,50 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }.footer{
-    box-shadow: 3px 3px 5px rgba(0,0,0.1);
-    background-color: rgb(162, 161, 161);
+    color: white;
+    background-color: rgb(34, 33, 33);
+    height: auto;
+    object-fit: cover;
+}
+.MainContainerFirst{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 30px;
+}
+#footerboxheading{
+    font-size: 23px;
+    color: rgb(205, 202, 202);
+}
+.footerbox1{
+    text-align: start;
+}
+.footerbox2{
+    text-align: start;
+}
+.footerbox3{
+    text-align: start;
+}
+.footerbox4{
+    text-align: start;
+}
+
+.footerbox5{
+    width: 200px;
+    object-fit: cover;
+    text-align: start;
+}
+
+.MainContainerSecond{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+    flex-wrap: wrap;
+}
+hr{
+    color: rgb(43, 42, 42);
+    height: 0.1px;
 }

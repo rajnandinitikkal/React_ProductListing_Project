@@ -1,5 +1,6 @@
 .navCategoryNameSection{
   display: flex;
+  flex-wrap:wrap;
   justify-content: space-evenly;
   position: relative;  
 }
@@ -90,9 +91,6 @@ ul li{
 } 
 .slider-container{
   height: 400px;  
-}
-.categoryImage{
-  
 }
 
 }
