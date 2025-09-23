@@ -1,6 +1,5 @@
-import dotenv from 'dotenv';
+require('dotenv').config();
 const express= require('express');
-
 const mongoose= require('mongoose');
 const cors = require('cors');
 const productModel = require('./models/products')
@@ -15,7 +14,7 @@ mongoose.connect(process.env.MONGODB_URL,
     useUnifiedTopology: true,
 })
 .then(() => console.log("Mongodb connected"))
-.catch(err => console.log(err))
+.catch(err => console.log("MongoDB connection error:", err));
 
 app.get('/getProducts', async (req, res) =>{
     try{
@@ -31,6 +30,7 @@ app.get('/getProducts', async (req, res) =>{
     // .catch(err => res.json(err))
 })
 
-app.listen(3001, () => {
-    console.log("server is running on port 3001");
+const PORT = process.env.PORT || 3001
+app.listen(PORT, () => {
+    console.log(`server is running on port ${PORT}`);
 })

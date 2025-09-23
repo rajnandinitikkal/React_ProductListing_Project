@@ -1,4 +1,26 @@
 .productDetailPage{
-    display: flex;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;  
+    margin: 20px;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+img{
+    height: auto;
+    
+}
+.productDetailPageImage{
+display: inline-block;
+}
+.productDetailPageInformation{
+    text-align: left;
+    padding-left: 25px;
+}
+.addtobagbutton{
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius:8px ;
+    margin: 10px;
+    padding: 7px;
+    height: fit-content;
 }

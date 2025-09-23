@@ -8,7 +8,7 @@ import { MongoClient } from "mongodb";
 const filter = {};
 
 const client = await MongoClient.connect(
-  "mongodb+srv://rajnandinitikkal:ecommerce1password@cluster1.ixdrzsw.mongodb.net/products-data?retryWrites=true&w=majority"
+  "mongodb+srv://rajnandinitikkal_db_user:ReactProjectEcommerce@newcluster.xglv9ou.mongodb.net/?retryWrites=true&w=majority&appName=NewCluster"
 );
 const coll = client.db("products-data").collection("product");
 const cursor = coll.find(filter);
