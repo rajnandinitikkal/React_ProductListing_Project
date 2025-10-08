@@ -1,7 +1,7 @@
 import axios from "axios";
 import "../Styles/Productcard.css";
 import React, { useState, useEffect } from "react";
-import productsJsonData from "../data/products.json";
+// import productsJsonData from "../data/products.json";
 import { useNavigate } from "react-router-dom";
 import Footer from "./footer";
 
@@ -17,7 +17,7 @@ function Productcard() {
         .then((res) => setProducts(res.data))
         .catch((err) => console.log(err));
     } else {
-      setProducts(productsJsonData);
+      // setProducts(productsJsonData);
     }
   }, [useMongoDB]);
 
@@ -27,10 +27,10 @@ function Productcard() {
 
   return (
     <>
-      <div className="toggle-button">
+      {/* <div className="toggle-button">
         <button onClick={() => setUseMongoDB(false)}>Use JSON Data</button>
         <button onClick={() => setUseMongoDB(true)}>Use MongoDB</button>
-      </div>
+      </div> */}
       <div className="products-container">
         {Array.isArray(products) &&
           products.map((product) => (
